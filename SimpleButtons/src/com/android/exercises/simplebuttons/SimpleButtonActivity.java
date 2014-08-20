@@ -7,9 +7,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SimpleButtonActivity extends ActionBarActivity {
 	private static final String TAG = "SimpleButtonActivity";
+	
+	private String mMessage;
 	
 	TextView mText;
 	Button mOkButton;
@@ -43,6 +46,9 @@ public class SimpleButtonActivity extends ActionBarActivity {
 				mText.setText("Button Cancel was clicked.");
 				break;
 			}
+
+			mMessage = (String) mText.getText();
+			Toast.makeText(getApplicationContext(), mMessage, Toast.LENGTH_SHORT).show();
 		}
 	};
 }
