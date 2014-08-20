@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.exercises.simplemenu.SimpleMenuActivity" >
+
+    <item
+        android:id="@+id/menu_add"
+        android:title="@string/item_add">
+    </item>
+    <item
+        android:id="@+id/menu_edit"
+        android:title="@string/item_edit">
+    </item>
+    <item
+        android:id="@+id/menu_delete"
+        android:orderInCategory="3"
+        android:title="@string/item_delete">
+    </item>
+
+    <group android:id="@+id/group1" >
+        <item
+            android:id="@+id/menu_copy"
+            android:orderInCategory="1"
+            android:title="@string/item_copy">
+        </item>
+        <item
+            android:id="@+id/menu_paste"
+            android:orderInCategory="2"
+            android:title="@string/item_paste">
+        </item>
+        <item
+            android:id="@+id/menu_exit"
+            android:orderInCategory="4"
+            android:title="@string/item_exit">
+        </item>
+    </group>
+
+</menu>
